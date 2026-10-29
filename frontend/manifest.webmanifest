@@ -1,0 +1,58 @@
+{
+  "id": "/dashboard",
+  "name": "College Cart Personal Manager",
+  "short_name": "College Cart",
+  "description": "Personal sales, inventory, cash and reconciliation manager for College Cart.",
+  "start_url": "/dashboard",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#f5f6f8",
+  "theme_color": "#0f172a",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "finance"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "New Sale",
+      "short_name": "New Sale",
+      "description": "Record a walk-in, website or phone order",
+      "url": "/new-sale",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Money History",
+      "short_name": "Money",
+      "description": "Open the money ledger",
+      "url": "/money-history",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}

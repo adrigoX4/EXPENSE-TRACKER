@@ -1,0 +1,100 @@
+INFO:     Started server process [25592]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57888 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57889 - "GET /dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60429 - "GET /api/dashboard?range=today HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:60429 - "GET /login?next=%2Fdashboard%3Frange%3Dtoday HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52456 - "GET /js/auth.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60429 - "GET /css/app.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60429 - "GET /api/auth/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60429 - "GET /signup HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60429 - "GET /api/auth/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60429 - "GET /sw.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61671 - "GET / HTTP/1.1" 308 Permanent Redirect
+INFO:     127.0.0.1:61671 - "GET /dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61671 - "GET /css/app.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63615 - "GET /js/main.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63615 - "GET /js/sync.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61671 - "GET /js/ui.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64039 - "GET /js/router.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60281 - "GET /js/store.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57668 - "GET /js/db.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57777 - "GET /manifest.webmanifest HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60281 - "GET /js/api.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60281 - "GET /signup HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57668 - "GET /icons/app-icon.svg HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57668 - "GET /js/auth.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57668 - "GET /api/auth/status HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57668 - "GET /sw.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57668 - "GET /dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60281 - "GET /index.html HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57668 - "GET /js/pages/dashboard.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60281 - "GET /js/pages/new-sale.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57668 - "GET /js/pages/sales.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64039 - "GET /js/pages/inventory.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60281 - "GET /js/pages/sale-detail.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57668 - "GET /js/pages/expenses.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64039 - "GET /js/pages/money-history.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60281 - "GET /js/pages/reports.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57668 - "GET /js/pages/settings.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64039 - "GET /js/pages/not-found.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64039 - "GET /icons/favicon-32.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57668 - "GET /icons/icon-192.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:64039 - "GET /icons/apple-touch-icon.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:60281 - "GET /icons/icon-512.png HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:49304 - "POST /api/auth/register HTTP/1.1" 201 Created
+INFO:     127.0.0.1:49304 - "GET /dashboard HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61301 - "GET /api/products?limit=500 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49304 - "GET /api/settings HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49304 - "GET /api/dashboard?range=today HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49304 - "GET /sw.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52507 - "POST /api/sales HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52507 - "GET /api/products?limit=500 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52507 - "GET /api/dashboard?range=today HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52472 - "POST /api/sales HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52472 - "GET /api/products?limit=500 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52472 - "GET /api/dashboard?range=today HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62695 - "GET /api/sales?limit=50&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62695 - "GET /api/inventory/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59350 - "GET /api/products?limit=500 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61710 - "GET /api/dashboard?range=today HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61710 - "GET /api/sales?limit=50&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61710 - "GET /api/inventory/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60522 - "GET /api/products?limit=500 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60522 - "GET /api/expenses?limit=50&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61710 - "GET /api/expenses?limit=500&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65178 - "GET /api/money/ledger?range=month&limit=50&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62172 - "GET /api/money/monthly?year=2026 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55061 - "GET /api/expenses?limit=500&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64354 - "GET /api/expenses?limit=50&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55061 - "GET /api/audit?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64354 - "GET /api/sync/operations?limit=30 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51503 - "GET /api/backup/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64354 - "GET /api/inventory/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51503 - "GET /api/reports/summary?range=month HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55061 - "GET /api/reports/monthly?year=2026 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51503 - "GET /api/expenses?limit=500&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55061 - "GET /api/expenses?limit=50&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51503 - "GET /api/products?limit=500 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55061 - "GET /api/inventory/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57024 - "GET /api/inventory/movements?product_id=2&limit=100&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54121 - "GET /api/expenses?limit=500&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57024 - "GET /api/expenses?limit=50&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54121 - "GET /api/inventory/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57024 - "GET /api/reports/summary?range=month HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56651 - "GET /api/reports/monthly?year=2026 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57024 - "GET /api/audit?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56651 - "GET /api/sync/operations?limit=30 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54121 - "GET /api/backup/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54121 - "GET /api/expenses?limit=50&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56651 - "GET /api/expenses?limit=500&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54121 - "GET /api/money/monthly?year=2026 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56651 - "GET /api/money/ledger?range=month&limit=50&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56651 - "GET /api/expenses?limit=50&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54121 - "GET /api/expenses?limit=500&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56651 - "GET /api/products?limit=500 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54121 - "GET /api/inventory/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54121 - "GET /api/sales?limit=50&offset=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54121 - "GET /api/dashboard?range=today HTTP/1.1" 200 OK

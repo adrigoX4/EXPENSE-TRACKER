@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="color-scheme" content="light" />
+    <meta name="description" content="__CARTFLOW_DESCRIPTION__" />
+    <meta name="robots" content="__CARTFLOW_ROBOTS__" />
+    <meta name="application-name" content="College Cart Manager" />
+    <meta name="apple-mobile-web-app-title" content="College Cart" />
+    <title>__CARTFLOW_TITLE__</title>
+    __CARTFLOW_CANONICAL__
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="College Cart Manager" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content="__CARTFLOW_OG_TITLE__" />
+    <meta property="og:description" content="__CARTFLOW_OG_DESCRIPTION__" />
+    <meta property="og:url" content="__CARTFLOW_OG_URL__" />
+    <meta property="og:image" content="__CARTFLOW_OG_IMAGE__" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="__CARTFLOW_OG_IMAGE_ALT__" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="__CARTFLOW_OG_TITLE__" />
+    <meta name="twitter:description" content="__CARTFLOW_OG_DESCRIPTION__" />
+    <meta name="twitter:image" content="__CARTFLOW_OG_IMAGE__" />
+    <meta name="twitter:image:alt" content="__CARTFLOW_OG_IMAGE_ALT__" />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/icons/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/icons/app-icon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" sizes="180x180" />
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body class="auth-page" data-auth-mode="__CARTFLOW_AUTH_MODE__">
+    <a class="skip-link" href="#auth-form">Skip to form</a>
+
+    <main class="auth-shell">
+      <section class="auth-card" aria-labelledby="auth-heading">
+        <div class="auth-brand">
+          <span class="brand-mark" aria-hidden="true">CC</span>
+          <span class="brand-text">
+            <strong>College Cart</strong>
+            <small>Personal Manager</small>
+          </span>
+        </div>
+
+        <h1 id="auth-heading">__CARTFLOW_HEADING__</h1>
+        <p class="auth-subtitle">__CARTFLOW_SUBTITLE__</p>
+
+        <p class="auth-notice" id="auth-first-run" hidden>
+          No account exists yet. The first account you create keeps all records already on this
+          server; any later account starts with its own empty workspace.
+        </p>
+
+        <p class="auth-notice auth-notice-warn" id="auth-signup-closed" hidden>
+          New accounts are disabled on this server. Sign in with an existing account.
+        </p>
+
+        <div class="auth-alert" id="auth-error" role="alert" hidden></div>
+
+        <form class="auth-form" id="auth-form" method="post" action="/api/auth/login" novalidate>
+          <div class="field">
+            <label for="auth-email">Email address</label>
+            <input
+              id="auth-email"
+              name="email"
+              type="email"
+              autocomplete="username"
+              inputmode="email"
+              spellcheck="false"
+              autocapitalize="none"
+              required
+              maxlength="254"
+            />
+          </div>
+
+          <div class="field">
+            <label for="auth-password">Password</label>
+            <div class="auth-password-row">
+              <input
+                id="auth-password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                required
+                maxlength="128"
+              />
+              <button class="btn btn-secondary btn-sm auth-reveal" type="button" id="auth-reveal" aria-pressed="false">
+                Show
+              </button>
+            </div>
+            <span class="field-hint" id="auth-password-hint" hidden>
+              At least 8 characters, including a letter and a number.
+            </span>
+          </div>
+
+          <div class="field" id="auth-confirm-field" hidden>
+            <label for="auth-confirm">Confirm password</label>
+            <input
+              id="auth-confirm"
+              name="confirm"
+              type="password"
+              autocomplete="new-password"
+              maxlength="128"
+            />
+          </div>
+
+          <button class="btn btn-primary auth-submit" type="submit" id="auth-submit">
+            <span id="auth-submit-label">Sign in</span>
+          </button>
+        </form>
+
+        <p class="auth-alt">
+          <a href="__CARTFLOW_AUTH_ALT_HREF__" id="auth-alt-link">__CARTFLOW_AUTH_ALT_TEXT__</a>
+        </p>
+
+        <p class="auth-privacy">
+          Passwords are stored only as salted hashes. Each account has its own database, so sales,
+          money and backups are never shared between accounts.
+        </p>
+      </section>
+    </main>
+
+    <noscript>
+      <div class="noscript-banner">College Cart Manager needs JavaScript enabled to sign in.</div>
+    </noscript>
+
+    <script type="module" src="/js/auth.js"></script>
+  </body>
+</html>
