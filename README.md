@@ -1,4 +1,4 @@
-# College Cart Personal Manager
+# College store Personal Manager
 
 A local-first manager for a college snack cart: record sales even when the College Cart website or internet is down, track stock, cash, expenses, money received and given, customer balances, deliveries and backups.
 
